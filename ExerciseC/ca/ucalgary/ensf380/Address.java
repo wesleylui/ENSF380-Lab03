@@ -10,8 +10,12 @@ public class Address {
 	private String country;
 
 	// Constructor
-	public Address() {
-
+	public Address(String street, String city, String state, String postalCode, String country) {
+		this.street = street;
+		this.city = city;
+		this.state = state;
+		this.postalCode = postalCode;
+		this.country = country;
 	}
 
 	// Getters
@@ -59,10 +63,15 @@ public class Address {
 	// More Methods
 	public boolean validate() {
 		// Check if the address exists or not
+		// Basic check for now, see if all fields are filled
+		return street != null && !street.isEmpty() && city != null && !city.isEmpty() && state != null
+				&& !state.isEmpty() && postalCode != null && !postalCode.isEmpty() && country != null
+				&& !country.isEmpty();
 	}
 
 	public String outputAsLabel() {
 		// Method to output address as a label
-		// Ex:
+		// Ex: Street, City, State, PostalCode, Country
+		return this.street + ", " + this.city + ", " + this.state + ", " + this.postalCode + ", " + this.country;
 	}
 }

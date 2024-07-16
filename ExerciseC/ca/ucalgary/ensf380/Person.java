@@ -8,7 +8,7 @@ public class Person {
 	protected String emailAddress;
 	protected String address;
 
-	privatte static int lastPersonalNumber;
+	private static int lastPersonalNumber;
 	
 	// Constructor
 	
