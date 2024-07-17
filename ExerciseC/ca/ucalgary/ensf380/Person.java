@@ -35,10 +35,6 @@ public class Person {
 		return this.address;
 	}
 
-	public int getLastPersonalNumber() {
-		return this.lastPersonalNumber;
-	}
-
 	// Setters
 	public void setName(String name) {
 		this.name = name;
@@ -56,7 +52,8 @@ public class Person {
 		this.address = address;
 	}
 
-	// no setter for lastPersonalNumber because its a final variable.
+	// lastPersonalNumber has no getter or setter because it is an internal field (private)
+	// prevents external modification and will only be needed within the person class
 
 	// More Methods
 	protected String nextPersonalNumber(short type) {
