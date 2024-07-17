@@ -31,7 +31,7 @@ public class Person {
 		return this.emailAddress;
 	}
 
-	public String getAddress() {
+	public Address getAddress() {
 		return this.address;
 	}
 
@@ -60,7 +60,7 @@ public class Person {
 
 	// More Methods
 	protected String nextPersonalNumber(short type) {
-		
+		return String.format("PN%04d-%d", lastPersonalNumber, type);
 	}
 
 	public boolean hasValidAddress() {
