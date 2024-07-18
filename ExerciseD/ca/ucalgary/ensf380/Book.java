@@ -3,7 +3,7 @@
  */
 package ca.ucalgary.ensf380;
 
-public class Book {
+public abstract class Book {
 	// class variables
 	private String isbn;
 	private int publicationYear;

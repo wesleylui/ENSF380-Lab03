@@ -3,7 +3,7 @@
  */
 package ca.ucalgary.ensf380;
 
-public class Fiction extends Paperback {
+public abstract class Fiction extends Paperback {
 	// methods
 	public String coverArt() {
 		return "Method coverArt called from Fiction";
