@@ -10,7 +10,7 @@ public class University {
 		Address studentAddress = new Address("24", "CityB", "StateB", "T3H 2L4", "CountryB");
 
 		// Create Professor Dr. Lui
-		Professor professorLui = new Professor("Dr. Lui", "123-123-1234", "lui@example.com", professorAddress, "1234",
+		Professor professorLui = new Professor("Dr. Lui", "123-123-1234", "dr.lui@example.com", professorAddress, "1234",
 				100000);
 		System.out.println("Professor successfully created!");
 
