@@ -3,7 +3,6 @@
  */
 public class University {
 	public static void main(String args[]) {
-
 		// Create Address for Professor
 		Address professorAddress = new Address("123", "CityA", "StateA", "T3HA0A", "CountryA");
 
@@ -18,7 +17,7 @@ public class University {
 		// Create Student Kobe Bryant
 		Student studentKobe = new Student("Kobe Bryant", "824-824-2424", "kobe24@example.com", studentAddress, "24",
 				professorLui, 2.4);
-		System.out.println("Student successfully created!\n");
+		System.out.println("Student successfully created!");
 
 		// Print Professor details
 		System.out.println("Professor Details:\n");
